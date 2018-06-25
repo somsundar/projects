@@ -1,0 +1,37 @@
+<html>
+<body>
+<script>
+function func1()				
+{
+var r=document.getElementById("mailid").value;
+//alert(r);
+var atpos=r.indexOf("@");
+var dotpos=r.lastIndexOf(".");
+if(atpos<1||dotpos<atpos+2||dotpos+2>=r.length)
+{
+//alert("invaild emailid");
+document.getElementById("mailid").style="background-color:red";
+}
+else
+{document.getElementById("mailid").style="background-color:green";
+}
+//return false;
+}
+
+
+func2();
+function func2(){
+setInterval(function(){
+var now=new Date();
+console.log(now);
+document.getElementById('num').innerHTML=now;},1000);
+//console.log(x);
+}
+</script>
+<input type="text" id="mailid" onkeydown="func1()"></input>
+<input type="button" onclick="func1()" value="click"></input>
+<div id="num"></div>
+</body>
+	
+
+</html>

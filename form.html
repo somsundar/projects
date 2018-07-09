@@ -1,0 +1,79 @@
+<html>
+<head>
+
+
+<link rel="icon" href="Pictures/meee.jpg" type="image/gif/jpg" size="16*16">
+<style>
+font-family:arial;
+color:green;
+</style>
+</head>
+<body>
+<marquee>somasundar</marquee>
+<hr>
+<form method="post" action="set.php" >
+<fieldset>
+<legend>cv</legend>
+<table border="1">
+<tr>
+<td colspan="2" bgcolor="green">
+<center>biodata</center></td>
+</tr>
+<tr>
+<td>name</td>
+<td> <input type="text" name="name" ></td>
+</tr>
+
+<tr>
+<td>address</td>
+<td><textarea name="addr"></textarea></td>
+</tr>
+
+<tr>
+
+<td>password</td>
+<td><input type="password" name="psw"></td>
+</tr>
+
+<tr>
+<td>dob</td>
+<td><input type="date" name="dob"></td>
+</tr>
+
+<tr>
+<td>gender</td>
+<td><input type="radio" name="gender" value="male" >male<br>
+<input type="radio" name="gender" value="female">female
+<input type="radio" name="gender" value="others">others</td>
+</tr>
+
+<tr>
+<td>country</td>
+<td><select name="country">
+<option value="1"selected></option>
+<option value="1">india</option>				<!--datalist-default list; keygen-encryptin-->
+<option value="4">america</option>
+</select></td>
+</tr>
+<tr>
+<td>course</td>
+<td><input type="checkbox" name="course" value="php" checked>php
+<input type="checkbox" name="course" value="java">java</td>
+</tr>
+<tr>
+<td>Resume</td>
+<td><input type="file" name="resumee" value=""></td>
+</tr>
+<br>
+<tr>
+<td><input type="submit" name="submit" value="submit"></td>
+<td><input type="button" name="submit" value="cancel"></td>
+</tr>
+
+
+</table>
+
+</fieldset>
+</form>
+</body>
+</html>
